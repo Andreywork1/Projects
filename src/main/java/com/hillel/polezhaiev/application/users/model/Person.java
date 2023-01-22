@@ -1,22 +1,22 @@
-package com.hillel.polezhaiev.application.app.model;
+package com.hillel.polezhaiev.application.users.model;
 
 import java.util.Objects;
 
-public class User {
-    private String name;
+public class Person {
+    private String username;
     private String password;
 
-    public User(String name, String password) {
-        this.name = name;
+    public Person(String username, String password) {
+        this.username = username;
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -31,19 +31,19 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return Objects.equals(name, user.name) && Objects.equals(password, user.password);
+        Person person = (Person) o;
+        return Objects.equals(username, person.username) && Objects.equals(password, person.password);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, password);
+        return Objects.hash(username, password);
     }
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
+        return "Person{" +
+                "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
