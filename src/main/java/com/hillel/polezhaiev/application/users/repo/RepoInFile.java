@@ -5,6 +5,9 @@ import com.hillel.polezhaiev.application.users.exceptions.UserPersistException;
 import com.hillel.polezhaiev.application.users.model.Person;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Collectors;
 
 public class RepoInFile implements Repository{
     @Override
@@ -32,7 +35,21 @@ public class RepoInFile implements Repository{
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-            return bufferedReader.lines().anyMatch(line -> line.contains(username));
+            String string = bufferedReader.lines().collect(Collectors.joining(System.lineSeparator()));
+            String [] newString = string.split(";");
+
+            for (String name : newString) {
+                String resultName = name.substring(name.indexOf(' ') + 1);
+
+                if(resultName.equals(username)){
+                    return true;
+
+                }
+            }
+
+            return false;
+
+
         } catch(IOException e){
             throw new UserPersistException(String.format("Unable to persist user %s ", username), e);
 
