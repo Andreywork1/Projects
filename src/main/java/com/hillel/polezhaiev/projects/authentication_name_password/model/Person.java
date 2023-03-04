@@ -1,4 +1,4 @@
-package com.hillel.polezhaiev.projects.autification_name_password.model;
+package com.hillel.polezhaiev.projects.authentication_name_password.model;
 
 import java.util.Objects;
 

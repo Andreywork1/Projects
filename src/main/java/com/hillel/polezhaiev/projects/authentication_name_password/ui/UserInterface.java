@@ -1,9 +1,9 @@
-package com.hillel.polezhaiev.projects.autification_name_password.ui;
+package com.hillel.polezhaiev.projects.authentication_name_password.ui;
 
-import com.hillel.polezhaiev.projects.autification_name_password.exceptions.ExistsByUsernameException;
-import com.hillel.polezhaiev.projects.autification_name_password.exceptions.PasswordLengthException;
-import com.hillel.polezhaiev.projects.autification_name_password.exceptions.UserPersistException;
-import com.hillel.polezhaiev.projects.autification_name_password.service.SavePerson;
+import com.hillel.polezhaiev.projects.authentication_name_password.exceptions.ExistsByUsernameException;
+import com.hillel.polezhaiev.projects.authentication_name_password.exceptions.PasswordLengthException;
+import com.hillel.polezhaiev.projects.authentication_name_password.exceptions.UserPersistException;
+import com.hillel.polezhaiev.projects.authentication_name_password.service.SavePerson;
 
 import javax.swing.*;
 import java.awt.*;

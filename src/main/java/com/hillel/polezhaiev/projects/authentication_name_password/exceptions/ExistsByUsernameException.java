@@ -1,4 +1,4 @@
-package com.hillel.polezhaiev.projects.autification_name_password.exceptions;
+package com.hillel.polezhaiev.projects.authentication_name_password.exceptions;
 
 public class ExistsByUsernameException extends Exception{
 

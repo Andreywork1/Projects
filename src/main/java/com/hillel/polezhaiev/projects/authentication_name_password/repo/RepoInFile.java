@@ -1,8 +1,8 @@
-package com.hillel.polezhaiev.projects.autification_name_password.repo;
+package com.hillel.polezhaiev.projects.authentication_name_password.repo;
 
-import com.hillel.polezhaiev.projects.autification_name_password.exceptions.PasswordLengthException;
-import com.hillel.polezhaiev.projects.autification_name_password.exceptions.UserPersistException;
-import com.hillel.polezhaiev.projects.autification_name_password.model.Person;
+import com.hillel.polezhaiev.projects.authentication_name_password.exceptions.PasswordLengthException;
+import com.hillel.polezhaiev.projects.authentication_name_password.exceptions.UserPersistException;
+import com.hillel.polezhaiev.projects.authentication_name_password.model.Person;
 
 import java.io.*;
 import java.util.Arrays;
