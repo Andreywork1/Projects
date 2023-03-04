@@ -1,1 +1,0 @@
-This project about the program that saves name and password of a user in a file. 
